@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EL MUÑECAZO — Del Páramo Para El Mundo</title>
+<meta name="description" content="El Muñecazo: shows en vivo, saludos personalizados y contacto comercial con Ruwana Films.">
+
+<!-- ============================================================
+     GOOGLE FONTS
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Archivo+Black&family=Oswald:wght@400;500;600&family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Grain / noise texture overlay, sits above everything, non-interactive -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- Skip link for keyboard / screen reader users -->
+<a class="skip-link" href="#home">Saltar al contenido principal</a>
+
+<!-- ================================================================
+     NAV — vertical menu on desktop, compact bar + hamburger on mobile
+     ================================================================ -->
+<header class="site-nav" id="siteNav">
+
+  <!-- LOGO — real artist logo -->
+  <a href="#home" class="logo-block" aria-label="El Muñecazo — inicio">
+    <img src="assets/LOGO/LOGO%20JV.svg" alt="El Muñecazo" class="logo-img">
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+    <ul>
+      <li><a href="#home" class="nav-link active" data-section="home">HOME</a></li>
+      <li><a href="#shows" class="nav-link" data-section="shows">SHOWS</a></li>
+      <li><a href="#saludos" class="nav-link" data-section="saludos">SALUDOS</a></li>
+      <li><a href="#contactos" class="nav-link" data-section="contactos">CONTACTOS</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- overlay behind mobile menu when open -->
+<div class="nav-scrim" id="navScrim"></div>
+
+<main id="main-content">
+
+  <!-- ============================================================
+       HOME — hero / collage / bio / slogan share one animated
+       ambient backdrop (see .home-scope::before in styles.css)
+       ============================================================ -->
+  <div class="home-scope">
+
+  <!-- ============================================================
+       SECTION 1 — HOME
+       ============================================================ -->
+  <section id="home" class="section hero hero--home">
+
+    <!-- Video background. Replace the YouTube ID below to change the video. -->
+    <div class="video-bg" data-yt-id="s0CzZj-Ij5E" aria-hidden="true">
+      <div class="video-bg__fallback"></div>
+      <div class="video-bg__frame"></div>
+      <div class="video-bg__overlay"></div>
+    </div>
+
+    <div class="hero-content hero-content--home">
+      <div class="hero-wordmark-wrap reveal">
+        <img src="assets/LOGO/paramo_mundo.svg" alt="Del Páramo Para El Mundo" class="hero-wordmark">
+      </div>
+      <div class="scroll-cue reveal" aria-hidden="true">
+        <span>SCROLL</span>
+        <i></i>
+      </div>
+    </div>
+
+    <div class="hero-corner-mark" aria-hidden="true">EL MUÑECAZO</div>
+  </section>
+
+  <!-- ============================================================
+       COLLAGE — interactive editorial photo wall (real event photos)
+       ============================================================ -->
+  <section class="section collage-section">
+
+    <!-- 10 real event photos — reorder or swap src to change the mix -->
+    <div class="collage-grid" id="collageGrid">
+      <figure class="collage-item ci-1" style="--rot:-4deg; --dur:8.5s; --delay:-1.2s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/IMG_0818.jpg" alt="El Muñecazo en escena" loading="lazy"></div></figure>
+      <figure class="collage-item ci-2" style="--rot:2deg; --dur:9.4s; --delay:-3.6s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/IMG_0826.jpg" alt="Público disfrutando del show" loading="lazy"></div></figure>
+      <figure class="collage-item ci-3" style="--rot:-2deg; --dur:7.8s; --delay:-2.1s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/IMG_3394.jpg" alt="Artista en tarima" loading="lazy"></div></figure>
+      <figure class="collage-item ci-4" style="--rot:5deg; --dur:10.2s; --delay:-0.5s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW0092.jpg" alt="Show en vivo" loading="lazy"></div></figure>
+      <figure class="collage-item ci-5" style="--rot:3deg; --dur:8.1s; --delay:-4.4s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW0224.jpg" alt="Energía del público" loading="lazy"></div></figure>
+      <figure class="collage-item ci-6" style="--rot:-3deg; --dur:9.9s; --delay:-1.8s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW3400.jpg" alt="Luces de escenario" loading="lazy"></div></figure>
+      <figure class="collage-item ci-7" style="--rot:4deg; --dur:8.7s; --delay:-3.2s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW3775.jpg" alt="Detalle del show" loading="lazy"></div></figure>
+      <figure class="collage-item ci-8" style="--rot:-5deg; --dur:9.2s; --delay:-0.9s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW4066.jpg" alt="Fiesta y espectáculo" loading="lazy"></div></figure>
+      <figure class="collage-item ci-9" style="--rot:-2deg; --dur:10.6s; --delay:-2.7s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW6122.jpg" alt="Momento en vivo" loading="lazy"></div></figure>
+      <figure class="collage-item ci-10" style="--rot:2deg; --dur:8.3s; --delay:-4.9s"><div class="collage-item__frame"><img src="assets/FOTOGRAFIAS/_RUW8234.jpg" alt="Cierre del show" loading="lazy"></div></figure>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BIO
+       ============================================================ -->
+  <section class="section bio-section">
+    <div class="bio-photo bio-photo--cinematic reveal">
+      <img src="assets/FOTOGRAFIA PERSONAL/JV-002DSC05325.png" alt="Retrato de El Muñecazo" loading="lazy">
+    </div>
+
+    <div class="bio-card reveal">
+      <div class="bio-card__logo">
+        <img src="assets/LOGO/LOGO%20JV.svg" alt="El Muñecazo">
+      </div>
+      <!-- Bio text — replace with the artist's final approved biography -->
+      <p class="bio-card__text">Desde las raíces del páramo nace una propuesta artística llena de energía, humor, música y conexión popular. El Muñecazo transforma cada escenario en una fiesta visual y sonora, llevando su identidad, carisma y espectáculo a nuevos públicos.</p>
+    </div>
+  </section>
+
+  <!-- SLOGAN -->
+  <section class="section slogan-section">
+    <div class="slogan-wordmark reveal">
+      <img src="assets/LOGO/paramo_mundo.svg" alt="Del Páramo Para El Mundo">
+    </div>
+  </section>
+
+  </div><!-- /.home-scope -->
+
+  <!-- ============================================================
+       SECTION 2 — SHOWS
+       ============================================================ -->
+  <section id="shows" class="section hero hero--shows">
+
+    <div class="video-bg" data-yt-id="tdLbs8xp9dA" aria-hidden="true">
+      <div class="video-bg__fallback"></div>
+      <div class="video-bg__frame"></div>
+      <div class="video-bg__overlay"></div>
+    </div>
+
+    <canvas id="fireworksCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content hero-content--center">
+      <h1 class="hero-title reveal">SHOWS</h1>
+    </div>
+  </section>
+
+  <!-- FLOATING PHOTOS -->
+  <section class="section floating-section">
+    <div class="section-heading section-heading--center reveal">
+      <h2 class="section-title">SHOWS 2026</h2>
+    </div>
+
+    <div class="floating-stage" id="floatingStage">
+      <figure class="float-photo fp-1" style="--d:0"><img src="assets/FOTOGRAFIAS/_RUW3418.jpg" alt="Escenario y tarima" loading="lazy"></figure>
+      <figure class="float-photo fp-2" style="--d:1"><img src="assets/FOTOGRAFIAS/_RUW3506.jpg" alt="Bailarinas en vivo" loading="lazy"></figure>
+      <figure class="float-photo fp-3" style="--d:2"><img src="assets/FOTOGRAFIAS/_RUW3787.jpg" alt="Luces de escenario" loading="lazy"></figure>
+      <figure class="float-photo fp-4" style="--d:3"><img src="assets/FOTOGRAFIAS/_RUW3819.jpg" alt="Público en concierto" loading="lazy"></figure>
+      <figure class="float-photo fp-5" style="--d:4"><img src="assets/FOTOGRAFIAS/_RUW4169.jpg" alt="Show musical en vivo" loading="lazy"></figure>
+      <figure class="float-photo fp-6" style="--d:5"><img src="assets/FOTOGRAFIAS/_RUW4292.jpg" alt="Energía sobre la tarima" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="120" data-suffix="+">0</span>
+        <span class="stat-label">SHOWS</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="100000" data-suffix="+">0</span>
+        <span class="stat-label">PERSONAS CONECTADAS</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="25" data-suffix="+">0</span>
+        <span class="stat-label">CIUDADES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWS CTA -->
+  <section class="section shows-cta">
+    <p class="shows-cta__eyebrow reveal">GIRA 2026</p>
+    <h2 class="shows-cta__title reveal">EL MUÑECAZO<br>EN TU CIUDAD</h2>
+    <a href="#contactos" class="btn btn--glass btn--xl reveal">RESERVAR MI FECHA</a>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — SALUDOS
+       ============================================================ -->
+  <section id="saludos" class="section hero hero--saludos">
+
+    <div class="video-bg" data-yt-id="zOd-rGdBVfA" aria-hidden="true">
+      <div class="video-bg__fallback"></div>
+      <div class="video-bg__frame"></div>
+      <div class="video-bg__overlay"></div>
+    </div>
+
+    <canvas id="emojiCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content hero-content--center">
+      <h1 class="hero-title reveal">SALUDOS<br>PERSONALIZADOS</h1>
+      <p class="hero-subtitle reveal">Regala un mensaje único, divertido y grabado especialmente para esa persona.</p>
+    </div>
+  </section>
+
+  <!-- SALUDOS CARDS -->
+  <section class="section cards-section">
+    <div class="cards-grid">
+
+      <article class="greet-card reveal" data-modal="cumple">
+        <span class="greet-card__num">01</span>
+        <h3 class="greet-card__title">Saludo de Cumpleaños</h3>
+        <p class="greet-card__text">Un mensaje especial para celebrar con humor, cariño y energía.</p>
+        <button class="btn btn--outline" type="button" data-open-modal="cumple">VER DETALLE</button>
+      </article>
+
+      <article class="greet-card reveal" data-modal="sorpresa">
+        <span class="greet-card__num">02</span>
+        <h3 class="greet-card__title">Saludo Sorpresa</h3>
+        <p class="greet-card__text">Ideal para sorprender a alguien con un mensaje inesperado y divertido.</p>
+        <button class="btn btn--outline" type="button" data-open-modal="sorpresa">VER DETALLE</button>
+      </article>
+
+      <article class="greet-card reveal" data-modal="empresarial">
+        <span class="greet-card__num">03</span>
+        <h3 class="greet-card__title">Saludo Empresarial / Evento</h3>
+        <p class="greet-card__text">Un saludo personalizado para marcas, activaciones, eventos o equipos de trabajo.</p>
+        <button class="btn btn--outline" type="button" data-open-modal="empresarial">VER DETALLE</button>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — CONTACTOS
+       ============================================================ -->
+  <section id="contactos" class="section hero hero--contact">
+
+    <div class="video-bg" data-yt-id="hb1f0HjfzjY" aria-hidden="true">
+      <div class="video-bg__fallback"></div>
+      <div class="video-bg__frame"></div>
+      <div class="video-bg__overlay"></div>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-intro reveal">
+        <h2 class="section-title section-title--xl contact-intro__title">¿QUÉ ESPERAS PARA<br>TRABAJAR CON NOSOTROS?</h2>
+
+        <!-- WHATSAPP — replace 593XXXXXXXXX with the real business number -->
+        <a class="btn btn--primary btn--xl" id="whatsappRuwana"
+           href="https://wa.me/593XXXXXXXXX?text=Hola%20Ruwana%20Films%2C%20quiero%20informaci%C3%B3n%20sobre%20shows%20%2F%20saludos%20%2F%20publicidad."
+           target="_blank" rel="noopener">CONTACTO DIRECTO CON RUWANA FILMS</a>
+        <p class="contact-intro__note">Cotizaciones · Shows · Publicidad</p>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="fName">Nombre</label>
+          <input type="text" id="fName" name="nombre" required autocomplete="name">
+        </div>
+
+        <div class="form-row">
+          <label for="fPhone">Teléfono / WhatsApp</label>
+          <input type="tel" id="fPhone" name="telefono" required autocomplete="tel" inputmode="tel">
+        </div>
+
+        <div class="form-row">
+          <label for="fCity">Ciudad</label>
+          <input type="text" id="fCity" name="ciudad" required autocomplete="address-level2">
+        </div>
+
+        <div class="form-row">
+          <label for="fType">Tipo de solicitud</label>
+          <select id="fType" name="tipo" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Cotización">Cotización</option>
+            <option value="Shows">Shows</option>
+            <option value="Publicidad">Publicidad</option>
+            <option value="Saludos">Saludos</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="fMsg">Mensaje</label>
+          <textarea id="fMsg" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">ENVIAR SOLICITUD</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 EL MUÑECAZO — Producción: <strong>RUWANA FILMS</strong></p>
+  </footer>
+
+</main>
+
+<!-- ============================================================
+     MODAL — Saludos detail
+     ============================================================ -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" id="modalClose" aria-label="Cerrar">&times;</button>
+
+    <div class="modal__video" id="modalVideoWrap">
+      <!-- Placeholder demo video — set a real YouTube ID in modalData (script.js)
+           and this placeholder will automatically be replaced by the iframe -->
+      <div class="modal__video-placeholder" id="modalVideoPlaceholder">
+        <span class="modal__video-play" aria-hidden="true">&#9658;</span>
+        <span>VIDEO DEMOSTRATIVO</span>
+      </div>
+      <iframe id="modalVideoFrame" src="" title="Video demostrativo" loading="lazy"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope"
+              allowfullscreen frameborder="0" hidden></iframe>
+    </div>
+
+    <div class="modal__body">
+      <h3 class="modal__title" id="modalTitle">Saludo de Cumpleaños</h3>
+      <p class="modal__text">Recibe un saludo personalizado de aproximadamente 30 segundos, grabado y editado con excelente calidad de audio y video. Ideal para cumpleaños, sorpresas, fechas especiales, eventos o mensajes únicos para compartir en redes sociales.</p>
+      <div class="modal__meta">
+        <span><strong>Valor:</strong> $10</span>
+        <span><strong>Entrega aprox.:</strong> 15 días</span>
+      </div>
+      <!-- WHATSAPP — replace 593XXXXXXXXX with the real business number -->
+      <a class="btn btn--primary btn--full" id="modalWhatsapp"
+         href="https://wa.me/593XXXXXXXXX" target="_blank" rel="noopener">SOLICITAR ESTE SALUDO</a>
+    </div>
+  </div>
+</div>
+
+<!-- GSAP is optional/progressive — the site works fully without it -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
